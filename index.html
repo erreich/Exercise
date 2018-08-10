@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="exercise.css">
+<script src="GridItem.js"></script>
+<script src="app.js"></script>
+<body>
+<div class="header">
+    <h1>Brandname</h1>
+    <div class="links">
+        <a href="" class="first">Menu item 1</a>
+        <a href="" class="other">Menu item 2</a>
+        <a href="" class="other">Menu item 3</a>
+        <a href="" class="other">Menu item 4</a>
+        <a href="" class="other">Menu item 5</a>
+        <a href="" class="other">Menu item 6</a>
+    </div>
+</div>
+
+<div class="bottom">
+    <span>Filer:</span>
+    <input type="checkbox" name="Meat" onchange="handleMeatOnChange();" id="Meat" checked> <span class="checkbox meat">Meat</span>
+    <input type="checkbox" name="Vegetable" onchange="handleVegetableOnChange();" id="Vegetable" checked> <span class="checkbox vegetable">Vegetable</span>
+    <input type="checkbox" name="Fruit" onchange="handleFruitOnChange();" id="Fruit" checked> <span class="checkbox fruit">Fruit</span>
+</div>
+
+<div class="grid-container" id="grid">
+    <grid-item data-name="Apple" data-category="Fruit" class="fruitItem"></grid-item>
+    <grid-item data-name="Aubergine" data-category="Vegetable" class="vegetableItem"></grid-item>
+    <grid-item data-name="Banana" data-category="Fruit" class="fruitItem"></grid-item>
+    <grid-item data-name="Broccoli" data-category="Vegetable" class="vegetableItem"></grid-item>
+    <grid-item data-name="Chicken" data-category="Meat" class="meatItem"></grid-item>
+    <grid-item data-name="Orange" data-category="Fruit" class="fruitItem"></grid-item>
+    <grid-item data-name="Beef" data-category="Meat" class="meatItem"></grid-item>
+    <grid-item data-name="Zucchini" data-category="Vegetable" class="vegetableItem"></grid-item>
+</div>
+
+</body>
+</html>
